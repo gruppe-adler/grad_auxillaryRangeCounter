@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GRAD">
+    <Package name="auxillaryRangeCounter">
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_settingCategory">
+            <English>GRAD Auxillary Range Counter</English>
+            <German>GRAD Auxillary Range Counter</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_displayName">
+            <English>Allow Auxillary Range Counter</English>
+            <German>Erlaube Auxillary Range Counter</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_tooltip">
+            <English>Allows the usage of Auxillary Range Counter</English>
+            <German>Erlaubt die nutzung von Auxillary Range Counter</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_startCounting">
+            <English>Start Auxillary Range Counter</English>
+            <German>Start Aux</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_stopCounting">
+            <English>Stop Auxillary Range Counter</English>
+            <German>Stop Auxillary Range Counter</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_showDistance">
+            <English>Show Traveled Distance</English>
+            <German>Gelaufene Strecke anzeigen</German>
+        </Key>
+    </Package>
+</Project>
