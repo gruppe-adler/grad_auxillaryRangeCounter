@@ -1,12 +1,12 @@
-name = "GRAD APOBS";
+name = "GRAD Auxillary Range Counter";
 author = "Gruppe Adler";
 picture = "Adler.paa";
 //actionName = "Website";
 //action = "https://github.com/gruppe-adler/grad_auxillaryRangeCounter/releases";
-description = "Gruppe Adler APOBS";
+description = "Gruppe Adler Auxillary Range Counter";
 logo = "Adler.paa";
 logoOver = "Adler.paa";
-tooltip = "Gruppe Adler APOBS";
+tooltip = "Gruppe Adler Auxillary Range Counter";
 overview = "";
 overviewPicture = "Adler.paa";
 overviewText = "";
