@@ -25,7 +25,7 @@ private _pfh = [{
 	if (
 		GVAR(allowAuxillaryRangeCounter) || 
 		{!(alive _unit)} || 
-		{!(isNil objectParent _unit)} 
+		{!(isNull objectParent _unit)} 
 	) exitWith {
 		[_handle] call CBA_fnc_removePerFrameHandler;
  	};
