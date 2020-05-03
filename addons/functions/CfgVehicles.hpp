@@ -11,7 +11,7 @@ class CfgVehicles {
                     statement = QUOTE(_player call FUNC(startPfh));
                     condition = QUOTE(_player call FUNC(canStart));
                 };
-				class GVAR(stopCounting) {
+                class GVAR(stopCounting) {
                     displayName = CSTRING(stopCounting);
                     exceptions[] = {};
                     showDisabled = 0;
@@ -27,7 +27,7 @@ class CfgVehicles {
                     statement = QUOTE(_player call FUNC(showDistance));
                     condition = QUOTE(_player call FUNC(canShowDistance));
                 };
-			};
-		};
-	};
+            };
+        };
+    };
 };
