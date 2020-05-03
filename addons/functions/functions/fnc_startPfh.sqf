@@ -22,13 +22,13 @@ private _pfh = [{
     params ["_args", "_handle"];
     _args params ["_unit"];
 
-	if (
-		GVAR(allowAuxillaryRangeCounter) || 
-		{!(alive _unit)} || 
-		{!(isNull objectParent _unit)} 
-	) exitWith {
-		[_handle] call CBA_fnc_removePerFrameHandler;
- 	};
+    if (
+        GVAR(allowAuxillaryRangeCounter) || 
+        {!(alive _unit)} || 
+        {!(isNull objectParent _unit)} 
+    ) exitWith {
+        [_handle] call CBA_fnc_removePerFrameHandler;
+    };
 
     private _lastPos = _unit getVariable [QGVAR(lastPos), []];
     private _distanceTraveled = _unit getVariable [QGVAR(distanceTraveled), 0];

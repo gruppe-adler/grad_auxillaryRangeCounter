@@ -18,6 +18,7 @@
 
 params ["_unit"];
 
+if !(GVAR(allowAuxillaryRangeCounter)) exitWith { false };
 if !(isNull objectParent _unit) exitWith { false };
 if !(_unit getVariable [QGVAR(pfh), -1] isEqualTo -1) exitWith { false };
 
