@@ -27,6 +27,7 @@ private _pfh = [{
         {!(alive _unit)} || 
         {!(isNull objectParent _unit)} 
     ) exitWith {
+        _unit setVariable [QGVAR(pfh), -1];
         [_handle] call CBA_fnc_removePerFrameHandler;
     };
 

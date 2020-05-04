@@ -27,6 +27,14 @@ class CfgVehicles {
                     statement = QUOTE(_player call FUNC(showDistance));
                     condition = QUOTE(_player call FUNC(canShowDistance));
                 };
+                class GVAR(reset) {
+                    displayName = CSTRING(reset);
+                    exceptions[] = {};
+                    showDisabled = 0;
+                    priority = 4;
+                    statement = QUOTE(_player call FUNC(reset));
+                    condition = QUOTE(_player call FUNC(canReset));
+                };
             };
         };
     };

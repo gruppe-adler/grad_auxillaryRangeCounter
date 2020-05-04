@@ -6,7 +6,7 @@
             <German>GRAD Auxillary Range Counter</German>
         </Key>
         <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_displayName">
-            <English>Allow Pace Beads</English>
+            <English>Allow pace count beads</English>
             <German>Erlaube Auxillary Range Counter</German>
         </Key>
         <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_tooltip">
@@ -18,12 +18,24 @@
             <German>Start Aux</German>
         </Key>
         <Key ID="STR_grad_auxillaryRangeCounter_functions_stopCounting">
-            <English>Stop Auxillary Range Counter</English>
+            <English>Stop counting pace beads</English>
             <German>Stop Auxillary Range Counter</German>
         </Key>
         <Key ID="STR_grad_auxillaryRangeCounter_functions_showDistance">
             <English>Show Traveled Distance</English>
             <German>Gelaufene Strecke anzeigen</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_Name">
+            <English>Pace count beads</English>
+            <German>Gelaufene Strecke anzeigen</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_Description">
+            <English>Uses beads to count distance</English>
+            <German>Gelaufene Strecke anzeigen</German>
+        </Key>
+        <Key ID="STR_grad_auxillaryRangeCounter_functions_reset">
+            <English>Reset Pace Beads</English>
+            <German>Auxillary Range Counter zurücksetzen</German>
         </Key>
     </Package>
 </Project>
