@@ -11,7 +11,7 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_auxillaryRangeCounter_functions_fnc_stopPfh;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_stopPfh;
  *
  * Public: No
  */
@@ -19,4 +19,4 @@
 params ["_unit"];
 
 private _overallDistanceTraveled = _unit getVariable [QGVAR(overallDistanceTraveled), 0];
-hintSilent format ["Distance Traveled: %1 Perlen", _overallDistanceTraveled];
+hintSilent format ["Distance Traveled: %1 Beads", _overallDistanceTraveled];

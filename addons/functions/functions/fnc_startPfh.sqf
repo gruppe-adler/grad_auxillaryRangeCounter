@@ -11,7 +11,7 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_auxillaryRangeCounter_functions_fnc_startPfh;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_startPfh;
  *
  * Public: No
  */
@@ -23,7 +23,7 @@ private _pfh = [{
     _args params ["_unit"];
 
     if (
-        GVAR(allowAuxillaryRangeCounter) || 
+        GVAR(allowPaceCountBeads) || 
         {!(alive _unit)} || 
         {!(isNull objectParent _unit)} 
     ) exitWith {
@@ -48,7 +48,7 @@ private _pfh = [{
             _unit setVariable [QGVAR(overallDistanceTraveled), _overallDistanceTraveled];
             _unit setVariable [QGVAR(triggerDistance), (random 10) + 95];
 
-            hintSilent format ["Distance Traveled: %1 Perlen", _overallDistanceTraveled];
+            hintSilent format ["Distance Traveled: %1 Beads", _overallDistanceTraveled];
         };
     };
 

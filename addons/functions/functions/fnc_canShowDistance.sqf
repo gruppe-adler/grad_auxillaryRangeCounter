@@ -11,14 +11,14 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_auxillaryRangeCounter_functions_fnc_canStart;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_canStart;
  *
  * Public: No
  */
 
 params ["_unit"];
 
-if !(GVAR(allowAuxillaryRangeCounter)) exitWith { false };
+if !(GVAR(allowPaceCountBeads)) exitWith { false };
 if !(isNull objectParent _unit) exitWith { false };
 if (_unit getVariable [QGVAR(pfh), -1] isEqualTo -1) exitWith { false };
 

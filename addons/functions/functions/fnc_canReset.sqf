@@ -11,14 +11,14 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_auxillaryRangeCounter_functions_fnc_canReset;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_canReset;
  *
  * Public: No
  */
 
 params ["_unit"];
 
-if !(GVAR(allowAuxillaryRangeCounter)) exitWith { false };
+if !(GVAR(allowPaceCountBeads)) exitWith { false };
 if (_unit getVariable [QGVAR(lastPos), []] isEqualTo []) exitWith { false };
 
 true

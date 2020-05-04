@@ -1,5 +1,5 @@
 #define MAINPREFIX x
-#define PREFIX grad_auxillaryRangeCounter
+#define PREFIX grad_paceCountBeads
 
 #include "script_version.hpp"
 

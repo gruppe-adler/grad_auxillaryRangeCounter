@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="GRAD">
-    <Package name="auxillaryRangeCounter">
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_settingCategory">
-            <English>GRAD Auxillary Range Counter</English>
-            <German>GRAD Auxillary Range Counter</German>
+    <Package name="paceCountBeads">
+        <Key ID="STR_grad_paceCountBeads_functions_settingCategory">
+            <English>GRAD Pace count beads</English>
+            <German>GRAD Pace count beads</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_displayName">
+        <Key ID="STR_grad_paceCountBeads_functions_allowPaceCountBeads_displayName">
             <English>Allow pace count beads</English>
-            <German>Erlaube Auxillary Range Counter</German>
+            <German>Erlaube Schritt Zähler Perlen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_allowAuxillaryRangeCounter_tooltip">
-            <English>Allows the usage of Auxillary Range Counter</English>
-            <German>Erlaubt die nutzung von Auxillary Range Counter</German>
+        <Key ID="STR_grad_paceCountBeads_functions_allowPaceCountBeads_tooltip">
+            <English>Allows the usage of Pace count beads</English>
+            <German>Erlaubt die nutzung von Schritt Zähler Perlen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_startCounting">
-            <English>Start Auxillary Range Counter</English>
-            <German>Start Aux</German>
+        <Key ID="STR_grad_paceCountBeads_functions_startCounting">
+            <English>Start Pace count beads</English>
+            <German>Start Schritt Zähler Perlen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_stopCounting">
+        <Key ID="STR_grad_paceCountBeads_functions_stopCounting">
             <English>Stop counting pace beads</English>
-            <German>Stop Auxillary Range Counter</German>
+            <German>Stop Schritt Zähler Perlen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_showDistance">
+        <Key ID="STR_grad_paceCountBeads_functions_showDistance">
             <English>Show Traveled Distance</English>
             <German>Gelaufene Strecke anzeigen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_Name">
+        <Key ID="STR_grad_paceCountBeads_functions_Name">
             <English>Pace count beads</English>
-            <German>Gelaufene Strecke anzeigen</German>
+            <German>Schritt Zähler Perlen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_Description">
+        <Key ID="STR_grad_paceCountBeads_functions_Description">
             <English>Uses beads to count distance</English>
-            <German>Gelaufene Strecke anzeigen</German>
+            <German>Benutzt Perlen um die gelaufene Distance zu messen</German>
         </Key>
-        <Key ID="STR_grad_auxillaryRangeCounter_functions_reset">
+        <Key ID="STR_grad_paceCountBeads_functions_reset">
             <English>Reset Pace Beads</English>
-            <German>Auxillary Range Counter zurücksetzen</German>
+            <German>Schritt Zähler Perlen zurücksetzen</German>
         </Key>
     </Package>
 </Project>

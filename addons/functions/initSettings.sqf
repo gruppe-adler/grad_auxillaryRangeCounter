@@ -1,9 +1,9 @@
 [
-    QGVAR(allowAuxillaryRangeCounter), 
+    QGVAR(allowPaceCountBeads), 
     "CHECKBOX", 
     [
-        localize LSTRING(allowAuxillaryRangeCounter_displayName), 
-        localize LSTRING(allowAuxillaryRangeCounter_tooltip)
+        localize LSTRING(allowPaceCountBeads_displayName), 
+        localize LSTRING(allowPaceCountBeads_tooltip)
     ], 
     localize LSTRING(settingCategory), 
     true,

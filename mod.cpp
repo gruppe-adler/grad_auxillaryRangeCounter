@@ -1,12 +1,12 @@
-name = "GRAD Auxillary Range Counter";
+name = "GRAD Pace Count Beads";
 author = "Gruppe Adler";
 picture = "Adler.paa";
 //actionName = "Website";
-//action = "https://github.com/gruppe-adler/grad_auxillaryRangeCounter/releases";
-description = "Gruppe Adler Auxillary Range Counter";
+//action = "https://github.com/gruppe-adler/grad_paceCountBeads/releases";
+description = "Gruppe Adler Pace Count Beads";
 logo = "Adler.paa";
 logoOver = "Adler.paa";
-tooltip = "Gruppe Adler Auxillary Range Counter";
+tooltip = "Gruppe Adler Pace Count Beads";
 overview = "";
 overviewPicture = "Adler.paa";
 overviewText = "";

@@ -1,5 +1,5 @@
-name = "GRAD Auxillary Range Counter"
-prefix = "grad_auxillaryRangeCounter"
+name = "GRAD Pace count beads"
+prefix = "grad_paceCountBeads"
 author = "Ainer, Salbei"
 files = [
     "mod.cpp",
@@ -12,7 +12,7 @@ key_name = "{{prefix}}_{{version}}"
 authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
 
 releasebuild = [
-    "@zip grad_auxillaryRangeCounter_{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
+    "@zip grad_paceCountBeads_{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
 ]
 
 [header_exts]

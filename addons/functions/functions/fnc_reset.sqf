@@ -11,7 +11,7 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_auxillaryRangeCounter_functions_fnc_reset;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_reset;
  *
  * Public: No
  */

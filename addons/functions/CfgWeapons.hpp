@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class GVAR(auxillaryRangeCounter): ACE_ItemCore {
+    class GVAR(paceCountBeads): ACE_ItemCore {
         displayName = CSTRING(Name);
         author = "Salbei";
         descriptionShort = CSTRING(Description);
