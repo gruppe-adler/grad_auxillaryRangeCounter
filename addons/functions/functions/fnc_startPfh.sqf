@@ -47,8 +47,6 @@ private _pfh = [{
 
             _unit setVariable [QGVAR(overallDistanceTraveled), _overallDistanceTraveled];
             _unit setVariable [QGVAR(triggerDistance), (random 10) + 95];
-
-            hintSilent format ["Distance Traveled: %1 Beads", _overallDistanceTraveled];
         };
     };
 

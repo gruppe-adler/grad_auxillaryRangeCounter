@@ -18,5 +18,10 @@
 
 params ["_unit"];
 
-private _overallDistanceTraveled = _unit getVariable [QGVAR(overallDistanceTraveled), 0];
-hintSilent format ["Distance Traveled: %1 Beads", _overallDistanceTraveled];
+//show UI
+"grad_paceCountBeads" cutRsc ["grad_paceCountBeads", "PLAIN"];
+
+//hide UI after 5 seconds
+//if () then {
+	[{"grad_paceCountBeads" cutText ["", "PLAIN"];}, [], 5] call CBA_fnc_waitAndExecute;
+//};
