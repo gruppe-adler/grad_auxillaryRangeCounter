@@ -13,7 +13,7 @@ class RscTitles
         onLoad = QUOTE(_this call FUNC(loadUI));
         class Controls {
             class background: ctrlStaticPictureKeepAspect {
-                idc = -1;
+                idc = IDC_TOP_BACKGROUND;
                 text = QPATHTOF(UI\background.paa);
                 x = safezoneX + (safezoneX/2);
                 y = safezoneY;

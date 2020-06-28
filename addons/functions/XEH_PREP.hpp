@@ -1,7 +1,11 @@
-PREP(canShowDistance);
+PREP(canHideBeads);
+PREP(canReset);
+PREP(canShowBeads);
 PREP(canStart);
 PREP(canStop);
+PREP(hideBeads);
 PREP(loadUI);
-PREP(showDistance);
+PREP(reset);
+PREP(showBeads);
 PREP(startPfh);
 PREP(stopPfh);

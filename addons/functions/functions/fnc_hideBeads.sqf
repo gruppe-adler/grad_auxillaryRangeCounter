@@ -16,12 +16,4 @@
  * Public: No
  */
 
-params ["_unit"];
-
-//show UI
-"grad_paceCountBeads" cutRsc ["grad_paceCountBeads", "PLAIN"];
-
-//hide UI after 5 seconds
-//if () then {
-	[{"grad_paceCountBeads" cutText ["", "PLAIN"];}, [], 5] call CBA_fnc_waitAndExecute;
-//};
+"grad_paceCountBeads" cutText ["", "PLAIN"];

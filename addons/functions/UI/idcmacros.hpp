@@ -1,2 +1,3 @@
-#define IDC_TOP_BEADS 1
-#define IDC_BOTTOM_BEADS 2
+#define IDC_TOP_BACKGROUND 1
+#define IDC_TOP_BEADS 2
+#define IDC_BOTTOM_BEADS 3

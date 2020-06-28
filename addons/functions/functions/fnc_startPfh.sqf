@@ -53,6 +53,27 @@ private _pfh = [{
     _unit setVariable [QGVAR(lastPos), _pos];
     _unit setVariable [QGVAR(distanceTraveled), _distanceTraveled];
 
+    if (GVAR(constantlyShow)) then {
+        private _compassDisplay = uiNamespace getVariable ["grad_paceCountBeads", displayNull];
+        private _compassCtrl = _compassDisplay displayCtrl IDC_TOP_BACKGROUND;
+        private _ctrlHeight = safezoneH;
+        private _ctrlWidth = safezoneW * 0.05;
+        private _ctrlX = ((0.25) * safezoneW + safezoneX) - (pixelW * 64);
+        private _ctrlY = safezoneY;
+
+        _ctrlX = profileNamespace getVariable ["igui_grad_paceCountBeads_x", _ctrlX];
+        _ctrlY = profileNamespace getVariable ["igui_grad_paceCountBeads_y", _ctrlY];
+        _ctrlWidth = profileNamespace getVariable ["igui_grad_paceCountBeads_w", _ctrlWidth];
+        _ctrlHeight = profileNamespace getVariable ["igui_grad_paceCountBeads_h", _ctrlHeight];
+
+        _compassCtrl ctrlSetPosition [
+            _ctrlX,
+            _ctrlY,
+            _ctrlWidth,
+            _ctrlHeight
+        ];
+    };
+
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 _unit setVariable [QGVAR(pfh), _pfh];

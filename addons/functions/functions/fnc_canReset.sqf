@@ -19,6 +19,7 @@
 params ["_unit"];
 
 if !(GVAR(allowPaceCountBeads)) exitWith { false };
+if !(QGVAR(paceCountBeads) in (_unit call ace_common_fnc_uniqueItems)) exitWith {false};
 if (_unit getVariable [QGVAR(lastPos), []] isEqualTo []) exitWith { false };
 
 true

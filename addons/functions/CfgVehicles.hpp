@@ -19,13 +19,21 @@ class CfgVehicles {
                     statement = QUOTE(_player call FUNC(stopPfh));
                     condition = QUOTE(_player call FUNC(canStop));
                 };
-                class GVAR(showDistance) {
-                    displayName = CSTRING(showDistance);
+                class GVAR(showBeads) {
+                    displayName = CSTRING(showBeads);
                     exceptions[] = {};
                     showDisabled = 0;
                     priority = 4;
-                    statement = QUOTE(_player call FUNC(showDistance));
-                    condition = QUOTE(_player call FUNC(canShowDistance));
+                    statement = QUOTE(_player call FUNC(showBeads));
+                    condition = QUOTE(_player call FUNC(canShowBeads));
+                };
+                class GVAR(hideBeads) {
+                    displayName = CSTRING(showBeads);
+                    exceptions[] = {};
+                    showDisabled = 0;
+                    priority = 4;
+                    statement = QUOTE(_player call FUNC(hideBeads));
+                    condition = QUOTE(_player call FUNC(canHideBeads));
                 };
                 class GVAR(reset) {
                     displayName = CSTRING(reset);
