@@ -11,7 +11,7 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_paceCountBeads_functions_fnc_canStart;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_canShowBeads;
  *
  * Public: No
  */

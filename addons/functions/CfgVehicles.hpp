@@ -28,7 +28,7 @@ class CfgVehicles {
                     condition = QUOTE(_player call FUNC(canShowBeads));
                 };
                 class GVAR(hideBeads) {
-                    displayName = CSTRING(showBeads);
+                    displayName = CSTRING(hideBeads);
                     exceptions[] = {};
                     showDisabled = 0;
                     priority = 4;

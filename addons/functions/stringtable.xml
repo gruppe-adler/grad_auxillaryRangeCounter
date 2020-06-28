@@ -2,8 +2,8 @@
 <Project name="GRAD">
     <Package name="paceCountBeads">
         <Key ID="STR_grad_paceCountBeads_functions_settingCategory">
-            <English>GRAD Pace count beads</English>
-            <German>GRAD Pace count beads</German>
+            <English>GRAD Pace Count Beads</English>
+            <German>GRAD Pace Count Beads</German>
         </Key>
         <Key ID="STR_grad_paceCountBeads_functions_allowPaceCountBeads_displayName">
             <English>Allow pace count beads</English>

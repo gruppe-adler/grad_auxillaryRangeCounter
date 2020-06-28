@@ -3,6 +3,8 @@
 
 params ["_display"];
 
+uiNamespace setVariable ['grad_paceCountBeads', _display];
+
 private _overallDistanceTraveled = ace_player getVariable [QGVAR(overallDistanceTraveled), 0];
 private _top = floor(_overallDistanceTraveled/10);
 private _bottom = floor(_overallDistanceTraveled mod 10);

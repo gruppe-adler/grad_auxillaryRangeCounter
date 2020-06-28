@@ -7,7 +7,7 @@ class CfgUIGrids {
                         {
                             "((0.25) * safezoneW + safezoneX) - (pixelW * 64)",
                             "safezoneY",
-                            "safezoneW * 0.05",
+                            "safezoneW * 0.1",
                             "safezoneH"
                         },
 						"(((safezoneW / safezoneH) min 1.2) / 40)",

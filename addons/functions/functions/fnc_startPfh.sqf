@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "..\UI\idcmacros.hpp"
 
 /*
  * Author: Salbei
@@ -54,24 +55,22 @@ private _pfh = [{
     _unit setVariable [QGVAR(distanceTraveled), _distanceTraveled];
 
     if (GVAR(constantlyShow)) then {
-        private _compassDisplay = uiNamespace getVariable ["grad_paceCountBeads", displayNull];
-        private _compassCtrl = _compassDisplay displayCtrl IDC_TOP_BACKGROUND;
-        private _ctrlHeight = safezoneH;
-        private _ctrlWidth = safezoneW * 0.05;
-        private _ctrlX = ((0.25) * safezoneW + safezoneX) - (pixelW * 64);
-        private _ctrlY = safezoneY;
+        private _backgroundDisplay = uiNamespace getVariable ["grad_paceCountBeads", displayNull];
 
-        _ctrlX = profileNamespace getVariable ["igui_grad_paceCountBeads_x", _ctrlX];
-        _ctrlY = profileNamespace getVariable ["igui_grad_paceCountBeads_y", _ctrlY];
-        _ctrlWidth = profileNamespace getVariable ["igui_grad_paceCountBeads_w", _ctrlWidth];
-        _ctrlHeight = profileNamespace getVariable ["igui_grad_paceCountBeads_h", _ctrlHeight];
+        private _topCtrl = _backgroundDisplay displayCtrl IDC_TOP_BEADS;
+        private _bottomCtrl = _backgroundDisplay displayCtrl IDC_TOP_BEADS;
 
-        _compassCtrl ctrlSetPosition [
-            _ctrlX,
-            _ctrlY,
-            _ctrlWidth,
-            _ctrlHeight
-        ];
+        private _overallDistanceTraveled = ace_player getVariable [QGVAR(overallDistanceTraveled), 0];
+        private _top = floor(_overallDistanceTraveled/10);
+        private _bottom = floor(_overallDistanceTraveled mod 10);
+
+        if (_top > 4) then {
+            _top = 4;
+            _bottom = 9;
+        };
+
+        _topCtrl ctrlSetText format[QPATHTOF(UI\top_%1.paa), _top];
+        _bottomCtrl ctrlSetText format[QPATHTOF(UI\bottom_%1.paa), _bottom];
     };
 
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
