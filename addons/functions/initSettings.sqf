@@ -8,7 +8,7 @@
     localize LSTRING(settingCategory), 
     true,
     true
-] call CBA_Settings_fnc_init;
+] call  CBA_fnc_addSetting;
 
 [
     QGVAR(constantlyShow), 
@@ -20,5 +20,5 @@
     localize LSTRING(settingCategory), 
     false,
     true
-] call CBA_Settings_fnc_init;
+]  call CBA_fnc_addSetting;
 

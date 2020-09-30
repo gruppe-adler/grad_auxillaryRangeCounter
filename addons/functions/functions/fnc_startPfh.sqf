@@ -24,7 +24,7 @@ private _pfh = [{
     _args params ["_unit"];
 
     if (
-        GVAR(allowPaceCountBeads) || 
+        !GVAR(allowPaceCountBeads) || 
         {!(alive _unit)} || 
         {!(isNull objectParent _unit)} 
     ) exitWith {
@@ -58,7 +58,7 @@ private _pfh = [{
         private _backgroundDisplay = uiNamespace getVariable ["grad_paceCountBeads", displayNull];
 
         private _topCtrl = _backgroundDisplay displayCtrl IDC_TOP_BEADS;
-        private _bottomCtrl = _backgroundDisplay displayCtrl IDC_TOP_BEADS;
+        private _bottomCtrl = _backgroundDisplay displayCtrl IDC_BOTTOM_BEADS;
 
         private _overallDistanceTraveled = ace_player getVariable [QGVAR(overallDistanceTraveled), 0];
         private _top = floor(_overallDistanceTraveled/10);

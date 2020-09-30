@@ -2,7 +2,7 @@
 
 /*
  * Author: Salbei
- * Checks if the Counter can be started
+ * Checks if the Counter can hiden
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -11,7 +11,7 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_paceCountBeads_functions_fnc_canStart;
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_canHideBeads;
  *
  * Public: No
  */

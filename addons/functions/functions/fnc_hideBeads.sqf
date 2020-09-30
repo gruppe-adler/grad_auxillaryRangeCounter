@@ -2,7 +2,7 @@
 
 /*
  * Author: Salbei
- * Stops the counting PerFrameHandler.
+ * Hides the beads.
  *
  * Arguments:
  * 0: Unit <OBJECT>

@@ -3,7 +3,7 @@
 
 /*
  * Author: Salbei
- * Stops the counting PerFrameHandler.
+ * Creates UI for beads to be shown.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -12,10 +12,12 @@
  * NONE
  *
  * Example:
- * [ACE_player] call grad_paceCountBeads_functions_fnc_stopPfh;
+ * [] call grad_paceCountBeads_functions_fnc_showBeads;
  *
  * Public: No
  */
+ 
+if !(hasInterface) exitWith {};
 
 //show UI
 "grad_paceCountBeads" cutRsc ["grad_paceCountBeads", "PLAIN"];
@@ -43,21 +45,17 @@ private _array = [
     _ctrlHeight
 ];
 
-_backgroundCtrl ctrlSetPosition _array;
-_backgroundCtrl ctrlCommit 0;
+{
+    _x ctrlSetPosition _array;
+    _x ctrlCommit 0;
+}forEach [_backgroundCtrl, _topCtrl, _bottomCtrl];
 
-_topCtrl ctrlSetPosition _array;
-_topCtrl ctrlCommit 0;
-
-_bottomCtrl ctrlSetPosition _array;
-_bottomCtrl ctrlCommit 0;
-
-QGVAR(uiOpen) = true;
+GVAR(uiOpen) = true;
 
 //hide UI after 5 seconds
 if !(GVAR(constantlyShow)) then {
 	[{
-        QGVAR(uiOpen) = false;
+        GVAR(uiOpen) = false;
         "grad_paceCountBeads" cutText ["", "PLAIN"];
     }, [], 5] call CBA_fnc_waitAndExecute;
 };

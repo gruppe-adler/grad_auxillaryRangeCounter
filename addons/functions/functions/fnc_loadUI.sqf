@@ -1,6 +1,22 @@
 #include "script_component.hpp"
 #include "..\UI\idcmacros.hpp"
 
+/*
+ * Author: Salbei
+ * Shows the correct beads position.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [ACE_player] call grad_paceCountBeads_functions_fnc_loadUI;
+ *
+ * Public: No
+ */
+
 params ["_display"];
 
 uiNamespace setVariable ['grad_paceCountBeads', _display];
