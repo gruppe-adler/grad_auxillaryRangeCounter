@@ -17,3 +17,4 @@
  */
 
 "grad_paceCountBeads" cutText ["", "PLAIN"];
+GVAR(uiOpen) = false;
