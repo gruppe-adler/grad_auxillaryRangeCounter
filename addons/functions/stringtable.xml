@@ -11,15 +11,23 @@
         </Key>
         <Key ID="STR_grad_paceCountBeads_functions_allowPaceCountBeads_tooltip">
             <English>Allows the usage of Pace count beads</English>
-            <German>Erlaubt die nutzung von Schritt Zähler Perlen</German>
+            <German>Erlaubt die Nutzung von Schritt Zähler Perlen</German>
         </Key>
         <Key ID="STR_grad_paceCountBeads_functions_constantlyShow_displayName">
             <English>Constantly show beads</English>
-            <German>Perlen daurerhaf anzeigen</German>
+            <German>Perlen daurerhaft anzeigen</German>
         </Key>
         <Key ID="STR_grad_paceCountBeads_functions_constantlyShow_tooltip">
             <English>Will not auto hide beads.</English>
-            <German>Wird die perlen nicht automatisch verstecken.</German>
+            <German>Die Perlen werden nicht automatisch verstecken.</German>
+        </Key>
+        <Key ID="STR_grad_paceCountBeads_functions_showOnChange_displayName">
+            <English>Show on change</English>
+            <German>Bei Änderung anzeigen</German>
+        </Key>
+        <Key ID="STR_grad_paceCountBeads_functions_showOnChange_tooltip">
+            <English>Will show beads shortly on a distance change.</English>
+            <German>Perlen werden kurz Angezeigt wenn es eine Änderung gibt.</German>
         </Key>
         <Key ID="STR_grad_paceCountBeads_functions_startCounting">
             <English>Start Pace count beads</English>

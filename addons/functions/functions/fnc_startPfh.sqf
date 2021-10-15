@@ -32,6 +32,7 @@ private _pfh = [{
         [_handle] call CBA_fnc_removePerFrameHandler;
     };
 
+    private _distanceChanged = false;
     private _lastPos = _unit getVariable [QGVAR(lastPos), []];
     private _distanceTraveled = _unit getVariable [QGVAR(distanceTraveled), 0];
     private _overallDistanceTraveled = _unit getVariable [QGVAR(overallDistanceTraveled), 0];
@@ -43,6 +44,7 @@ private _pfh = [{
 
         _distanceTraveled = _distanceTraveled + _distance;
         if (_distanceTraveled >= _triggerDistance) then {
+            _distanceChanged = true;
             _overallDistanceTraveled = _overallDistanceTraveled + 1;
             _distanceTraveled = 0;
 
@@ -71,8 +73,11 @@ private _pfh = [{
 
         _topCtrl ctrlSetText format[QPATHTOF(UI\top_%1.paa), _top];
         _bottomCtrl ctrlSetText format[QPATHTOF(UI\bottom_%1.paa), _bottom];
+    } else {
+        if (GVAR(showOnChange) && {_distanceChanged}) then {
+            [] call FUNC(showBeads);
+        };
     };
-
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 _unit setVariable [QGVAR(pfh), _pfh];

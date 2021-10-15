@@ -22,3 +22,14 @@
     true
 ]  call CBA_fnc_addSetting;
 
+[
+    QGVAR(showOnChange), 
+    "CHECKBOX", 
+    [
+        localize LSTRING(showOnChange_displayName), 
+        localize LSTRING(showOnChange_tooltip)
+    ], 
+    localize LSTRING(settingCategory), 
+    false,
+    true
+]  call CBA_fnc_addSetting;
