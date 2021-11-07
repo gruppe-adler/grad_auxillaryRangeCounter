@@ -7,7 +7,7 @@
     ], 
     localize LSTRING(settingCategory), 
     true,
-    true
+    2
 ] call  CBA_fnc_addSetting;
 
 [
@@ -19,7 +19,7 @@
     ], 
     localize LSTRING(settingCategory), 
     false,
-    true
+    0
 ]  call CBA_fnc_addSetting;
 
 [
@@ -31,5 +31,5 @@
     ], 
     localize LSTRING(settingCategory), 
     false,
-    true
+    0
 ]  call CBA_fnc_addSetting;
