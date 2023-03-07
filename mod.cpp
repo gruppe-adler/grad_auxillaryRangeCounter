@@ -1,5 +1,5 @@
 name = "Gruppe Adler Pace Count Beads";
-author = "Ainer, Salbei";
+author = "DerZade, Salbei";
 logo = "logo_ca.paa";
 logoOver = "logo_active_ca.paa";
 tooltip = "Gruppe Adler Pace Count Beads";
